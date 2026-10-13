@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager Library — catálogo, socios y préstamos para bibliotecas pequeñas</title>
+  <meta name="description" content="Manager Library lleva el catálogo, los socios y los préstamos de una biblioteca pequeña, y muestra qué libros se prestan más.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <span class="brand">Manager Library</span>
+      <nav aria-label="Secciones">
+        <a href="#que-hace">Qué hace</a>
+        <a href="#reglas">Reglas</a>
+        <a href="#roles">Roles</a>
+        <a href="#como-funciona">Cómo funciona</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Para bibliotecas pequeñas</p>
+        <h1>El catálogo, los socios y los préstamos, en un solo lugar.</h1>
+        <p class="lead">Manager Library registra qué libro tiene cada socio, avisa cuáles están vencidos y muestra qué títulos se prestan más.</p>
+        <ul class="facts" aria-label="Datos clave">
+          <li><strong>14 días</strong> de plazo por préstamo</li>
+          <li><strong>3 libros</strong> como máximo por socio</li>
+          <li><strong>5 categorías</strong> fijas de catálogo</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="que-hace" class="wrap block">
+      <h2>Qué hace</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Catálogo de libros</h3>
+          <p>Cada libro tiene título, autor, ISBN, categoría, ejemplares y una portada opcional. Se busca por título o autor y se filtra por categoría.</p>
+        </article>
+        <article class="card">
+          <h3>Socios</h3>
+          <p>Se registran con nombre y documento. Los socios no inician sesión: son las personas que piden libros prestados.</p>
+        </article>
+        <article class="card">
+          <h3>Préstamos y devoluciones</h3>
+          <p>Un préstamo lleva de uno a tres libros. Cada libro se devuelve por separado y el ejemplar vuelve a estar disponible al instante.</p>
+        </article>
+        <article class="card">
+          <h3>Libros vencidos</h3>
+          <p>Una lista con el libro, el socio y los días de retraso, ordenada por los que llevan más tiempo sin volver.</p>
+        </article>
+        <article class="card">
+          <h3>Libros más prestados</h3>
+          <p>Un reporte por rango de fechas. Un mes ya cerrado no cambia aunque después se renombre un libro o su categoría.</p>
+        </article>
+        <article class="card">
+          <h3>Sesión con roles</h3>
+          <p>Cada persona entra con su usuario y su contraseña, y ve solo lo que su rol le permite.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="reglas" class="band">
+      <div class="wrap block">
+        <h2>Las reglas que el sistema cuida por ti</h2>
+        <ul class="rules">
+          <li>Nunca se presta un libro que no tiene ejemplares disponibles.</li>
+          <li>Si dos personas prestan el último ejemplar a la vez, solo una lo consigue.</li>
+          <li>Un socio con un libro vencido no puede pedir otro hasta devolverlo.</li>
+          <li>Un socio no puede tener más de tres libros sin devolver.</li>
+          <li>Un libro con préstamos abiertos no se puede dar de baja.</li>
+          <li>Los préstamos y las devoluciones no se borran: el historial se conserva.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="roles" class="wrap block">
+      <h2>Quién usa el sistema</h2>
+      <div class="grid grid-roles">
+        <article class="card">
+          <h3>Administrador</h3>
+          <p>Mantiene el catálogo y los socios, da de alta a los bibliotecarios y consulta el reporte de libros más prestados.</p>
+        </article>
+        <article class="card">
+          <h3>Bibliotecario</h3>
+          <p>Registra préstamos y devoluciones, y consulta el catálogo, los socios y los libros vencidos.</p>
+        </article>
+        <article class="card">
+          <h3>Socio</h3>
+          <p>Pide libros prestados. No entra al sistema: el bibliotecario registra sus préstamos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="band">
+      <div class="wrap block">
+        <h2>Cómo funciona un préstamo</h2>
+        <ol class="steps">
+          <li><strong>Busca al socio.</strong> Por nombre o por documento.</li>
+          <li><strong>Elige los libros.</strong> Hasta tres títulos distintos con ejemplares disponibles.</li>
+          <li><strong>Registra el préstamo.</strong> El sistema calcula el vencimiento a 14 días y descuenta los ejemplares.</li>
+          <li><strong>Registra la devolución.</strong> Libro por libro; cuando vuelven todos, el préstamo queda cerrado.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Manager Library · Prueba técnica de desarrollo guiado por especificación · Ficha ADSO 3145556</p>
+    </div>
+  </footer>
+</body>
+</html>
